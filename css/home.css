@@ -1,0 +1,394 @@
+
+.radial-menu {
+    top:15px;
+    left:15px;
+    position:fixed;
+    display:block;
+    width:60px;
+    height:60px;
+    background-color:transparent;
+    border-radius:50%;
+    z-index:20;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.menu-item1 {
+    width:60px;
+    height:60px;
+    /*background-color:dimGray;*/
+    background-color: #13789b !important;
+    border-radius:50%;
+    position:absolute;
+    color:white;
+    text-align:center;
+    line-height:70px;
+    /*top:25%;*/
+    /*left:25%;*/
+    top:0%;
+    left:0%;
+    z-index:19;
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    position:absolute;
+}
+.menu-item2 {
+    width:60px;
+    height:60px;
+    /*background-color:dimGray;*/
+    background-color: #13789b !important;
+    border-radius:50%;
+    position:absolute;
+    color:white;
+    text-align:center;
+    line-height:70px;
+    /*top:25%;*/
+    /*left:25%;*/
+    top:0%;
+    left:0%;
+    z-index:19;
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .2s;
+}
+.menu-item3 {
+    /*width:60%;*/
+    /*height:60%;*/
+    width:60px;
+    height:60px;
+    /*background-color:dimGray;*/
+    /*background-color: #13789b;*/
+    background-color: #13789b !important;
+
+
+    border-radius:50%;
+    position:absolute;
+    color:white;
+    text-align:center;
+    line-height:70px;
+    /*top:25%;*/
+    /*left:25%;*/
+    top:0%;
+    left:0%;
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .4s;
+}
+.menu-item4 {
+    /*width:60%;*/
+    /*height:60%;*/
+    width:60px;
+    height:60px;
+    /*background-color:dimGray;*/
+    /*background-color: #13789b;*/
+    background-color: #13789b !important;
+
+    border-radius:50%;
+    position:absolute;
+    color:white;
+    text-align:center;
+    line-height:70px;
+    /*top:25%;*/
+    /*left:25%;*/
+    top:0%;
+    left:0%;
+    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550) .6s;
+}
+.mask {
+    background-color: rgb(6, 7, 8);
+    top:14px;
+    left:14px;
+    /*width:100px;*/
+    /*height:100px;*/
+    width:62px;
+    height:62px;
+    /*background:darkSlateGray;*/
+    /*background-color: #123456;*/
+    border-radius:50%;
+    position:absolute;
+    z-index:21;
+    color:white;
+    text-align:center;
+    line-height:70px;
+    cursor:pointer;
+    position:fixed;
+}
+/*NAME ===PAUL KWOYELO===*/
+.myName{
+    margin-top: 20%;
+    font-family: roboto, san-serif;
+    /*font-size: 8vw;*/
+    font-weight: bolder;
+    /*text-shadow: 15px 15px 25px;*/
+    z-index: 10;
+    /*color: #123456;*/
+    font-size: 6vw;
+
+    text-shadow: 5px 5px 5px rgba(153, 153, 153, 0.68);
+    /*color: #171a1c;*/
+    color: #f5f5f5;
+
+}
+
+
+.parallax {
+
+
+    background-image: url("../images/20170526_181545.jpg");
+
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+/*@media only screen and (max-device-width: 1024px) {*/
+    /*.parallax {*/
+        /*background-attachment: scroll;*/
+    /*}*/
+/*}*/
+
+#background{
+
+
+    /*height: 100%;*/
+    /*height:805px;*/
+    height: 100vh;
+    /*height: 80vh;*/
+    width: 100%;
+    /*height: 100%;*/
+    position: relative;
+    overflow:hidden;
+    z-index: 1;
+    background-color: whitesmoke;
+    /*background: url("https://image.freepik.com/free-vector/grey-linen-texture-background_1053-253.jpg");*/
+    /*background-color: rgba(238, 238, 238, 0.73);*/
+    background-color: rgba(8, 8, 8, 0.78);
+}
+
+text{
+    font-family: roboto, san-serif;
+}
+.floatingText{
+    color: gray;
+    /*color: white !important;*/
+    z-index:-10;
+    /*text-shadow: 5px 25px 15px !important;*/
+}
+/* ANIMATIONS */
+.animation-container {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /*   top: 0; */
+       /*top:-600px;*/
+       top:-50vh;
+    /*top:-145vh;*/
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -10;
+
+}
+
+.animation-container span {
+       /*color: whitesmoke;*/
+    color: gray;
+    display: block;
+    font-size: 18px;
+    font-family: 'Helvetica';
+    text-shadow: 0 0 1px rgba(120, 120, 120, 0.71);
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    cursor: default;
+    z-index: -10;
+    opacity: 0;
+    will-change: transform, opacity;
+    animation-timing-function: ease-out;
+    animation-name: move;
+}
+
+@keyframes move {
+    0% {
+        opacity: 0;
+        transform: translateY(100vh);
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: none;
+    }
+}
+.well{
+    width: 100%;
+    word-wrap: break-word;
+}
+#aboutContainer{
+    width: 80%;
+    margin-top: 0%;
+}
+
+
+
+
+@keyframes loading {
+    0% {
+        max-width: 0;
+    }
+}
+#about{
+
+    background-color: #fff !important;
+}
+
+@-webkit-keyframes type { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+
+.ghostText{
+    color: whitesmoke;
+    white-space: nowrap;
+    overflow: hidden;
+    font: bold 200% Consolas;
+    width: 100%;
+    font-size: 1.5vw;
+    margin-left: 40%;
+    margin-top: 6%;
+
+}
+#one{
+    color: gray;
+}
+#two{
+    /*color:#903990;*/
+    color: rgb(255, 97, 255);
+}
+#four{
+    /*color: deepskyblue;*/
+    color: rgba(0, 191, 255, 0.58);
+}
+blink{
+    color: white;
+}
+.projects{
+
+    padding-top: 2%;
+    margin-left: 15%;
+
+}
+.portfolioItem{
+    background-color: rgba(39, 39, 39, 0.92);
+    margin-top: -20px !important;
+
+
+
+}
+
+/* Style all font awesome icons */
+.socialIcon {
+    padding: 10px;
+    font-size: 40px;
+    /*width: 40px;*/
+    /*height: 40px;*/
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+.socialIcon:hover{
+    opacity: 0.5;
+}
+#linkedin {
+     /*background: #007bb5;*/
+     /*color: white;*/
+     color: #007bb5;
+ }
+#github {
+    /*background: rgba(12, 8, 11, 0.95);*/
+    color: white;
+}
+#email{
+
+    background: #dd4b39;
+    color: white;
+}
+#twitter{
+    /*background: #55ACEE;*/
+    /*color: white;*/
+    color:#55ACEE;
+}
+
+.greetingWell{
+
+    border: none;
+    background-color: transparent;
+}
+.a1,.a2,.a3,.a4{
+    border: transparent;
+    background-color: transparent;
+    box-shadow: none !important;
+    color: rgba(51, 51, 51, 0.61);
+    word-wrap: break-word;
+
+}
+.a5{
+    border: transparent;
+    background-color: transparent;
+    box-shadow: none !important;
+    color: rgba(51,51,51,0.61);
+}
+
+hr{
+    width: 20%;
+    border-top: 1px solid rgba(0, 191, 255, 0.58) !important;
+
+}
+p{
+    color: rgba(51, 51, 51, 0.61);
+}
+.img_portfolio{
+    /*margin-left: 15%;*/
+    margin: auto;
+}
+.portfolio_icon{
+     width: 45px;
+     height: 45px;
+     margin-left: 45% !important;
+ }
+
+
+.projects_well{
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    margin-top: 0% !important;
+}
+.fa-android{
+    color: #4b7d2f;
+}
+.project_description{
+    color: white;
+}
+.resumebtn{
+    background-color: transparent;
+    border-color: rgba(0, 191, 255, 0.58) ;
+    box-shadow: 0 0 0 2px gray;
+}
+
+.resumebtn:hover{
+    /*background-color: rgba(0, 191, 255, 0.58) !important;*/
+    background-color: transparent;
+    box-shadow: none;
+
+}
